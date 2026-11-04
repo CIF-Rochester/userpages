@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This is the script to generate the index.  You should run this probably once per day, on a crontab.  I have it set to 2:30 AM, but that is completely arbitrary.  
+# Make sure to modify EXCLUDED_USERS as need be, as well as the location of the output.  
+# Further remember to set up your service account, so as to be able to kinit properly!  
+
 set -euo pipefail
 
 OUTPUT="/web/users/index.html"
